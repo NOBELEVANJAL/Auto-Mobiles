@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <title> About </title>
+ <style>
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+nav {
+  background-color: #ffffff;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: RIGHT;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color:black;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s;
+  border-radius:20px;
+}
+
+.menu a:hover {
+  background-color: orange;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+ </style>
+ </head>
+
+
+ <body>
+ <nav>
+    <ul class="menu">
+  <b>    <li><a href="loginsuccessfully.html">Home</a></li></b>
+ <b>   <li><a href="Feedback.html">FeedBack</a></li></b>
+    </ul>
+  </nav>
+  <div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://clubtraining.com.au/wp-content/uploads/2017/08/customer_service-800x500.jpg" alt="Jane" width="600px"height="350">
+      <div class="container">
+        <h2>Automobiles  Customer care</h2>
+        <p class="title">Customer Needs</p>
+        <p>Some text that describes .</p>
+        <p>customercare88@gmail.com</p>
+       <center>    <p><button><a href="contact2.html">Contact</a>
+		</button></p></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://wallup.net/wp-content/uploads/2017/11/23/498455-car-Super_Car-lykan_hypersport-red_cars-side_view.jpg" alt="Mike" width="600px"height="350">
+	  
+      <div class="container">
+        <h2>NBGZM
+AUTO MOBILES
+</h2>
+        <p class="title">AutoMobiles services</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>automobiles19@gmail.com</p>
+    <center>    <p><button><a href="contact1.html">Contact</a>
+		</button></p></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://image.freepik.com/free-vector/massive-car-production-factory-with-robotic-arm-machine-development-with-modern-isometric-style_82472-289.jpg" alt="John" width="600px"height="350">
+      <div class="container">
+        <h2>Bhargav Industries</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me..........</p>
+        <p>p.bhargavkumar@gmail.com</p>
+        <center>    <p><button><a href="contact.html">Contact</a>
+		</button></p></center>
+      </div>
+    </div>
+  </div>
+</div>
+ </body>
+</html>

@@ -1,0 +1,59 @@
+body{
+background-image:url("https://www.evspecifications.info/wp-content/uploads/2022/10/Audi-A6-etron-evchargeplus.png");
+background-repeat:no-repeat;
+background-size:cover;
+background:black;
+font-family: Montserrat,sans-serif;
+}
+nav {
+  background-color: #ffffff;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: RIGHT;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color:black;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color:orange;
+  border-radius:20px;
+}
+.Car-info {
+background:black;
+
+            border: 1 px solid #ffffff;
+padding:27px;
+margin:10px 10px;
+            width: 300px;
+float:left;
+text-align:center;
+border-color:white;
+color:black;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.Car-info {
+ background:linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+  background-size: 300% 300%;
+  animation: gradientAnimation 8s ease infinite;
+}

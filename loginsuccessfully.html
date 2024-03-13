@@ -1,0 +1,156 @@
+ <!DOCTYPE  html>
+<html>
+<head>
+<title>automobiles website</title>
+<style>
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+box-sizing:  border-box;
+}
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.background-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main{
+padding: 1%;
+}
+nav{
+padding: 24px 0;
+display:flex;
+align-items: center;
+flex-items: wrap;
+}
+.logo  {
+ width:200px;
+ font-size:100%;
+ cursor:pointer;
+ color:#FFF;
+ }
+.nav-links{
+display:flex;
+flex: 1;
+align-items: center;
+justify-content:space-between;
+}
+.nav-links a{
+margin-left:30px;
+text-decoration: none;
+color:#ff0000;
+transition: 2s;	
+}
+.nav-links a:hover{
+padding:11px;
+background-color:#FFF;
+}
+.nav-links1 {
+padding-left:70%;
+}
+.nav-links .btn{
+background: yellow;
+color:#000;
+padding:10px  28px ;
+border-radius:5px;
+}
+.content{
+margin-top:150px;
+margin-left:80px;
+color:YELLOW;
+}
+.content h1{
+font-size:50px;
+}
+.search{
+background:#fff;
+width:fit-content;
+margin:20px 0;
+padding:20px 20px;
+display:flex;
+align-items:center;
+}
+.search input{
+background:transparent;
+width:850px;
+border:0;
+outline:none;
+}
+button{
+padding:10px 80px;
+margin-left:24% ;
+background-color:yellow;
+cursor:pointer;
+}
+.login-container{
+width:450px;
+height:200px;
+position:absolute;
+top:30%;
+left:70%;
+}
+.login-container {
+    background-color:black;
+	background-size:cover;
+	background-repeat:no-repeat;
+    border-radius: 100px;
+    padding-top: 30px;
+	padding-left:85px;
+    box-shadow: 0px 0px 10px rgba(32,31,32);
+}
+
+.login-form label {
+PADDING-LEFT:"70PX";
+ 	    background:white;
+;
+}
+</style>
+</head>
+<body>
+<form action ="Connect.html">
+    <div class="car">
+            <div class="background-video">
+        <video autoplay muted loop>
+            <source src="https://cdn.pixabay.com/vimeo/161671387/car-2708.mp4?width=640&hash=2ebb46db3ab193edeecbf3abadd911b584ebc0cf">
+                </video>
+    </div>
+<div class="main">
+<nav>
+<div class="logo">
+<marquee><h1> NBGZM <br>AUTO  MOBILES </br></h1></marquee>
+</div>
+<div class="nav-links">
+<a href="allcars.html">Explore cars</a>
+<div class="nav-links1">
+<a class="btn" href="home.html">LOGOUT</a>
+</div>
+<div>
+<a class="btn" href="About.html">About</a>
+</div>
+</div>
+</nav>
+<div class="content">
+<h1>BUY THE BEST QUALITY <br> SECOND HAND CARS </h1>
+<div class="search">
+<input type="text" placeholder="Search Any car">
+</div>
+<button type="submit"><a href="">Search </a></button></div>
+</div>
+  <div class="login-container"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ0wv7M_nYmPJH3AYyQbbIGXZKj_8hoeAGIg&usqp=CAU" width="100PX" HEIGHT="80PX">
+  </form>
+        <form class="login-form">
+           <h2><b> <label for=""><U>WELCOME ADMIN<br>LOGIN SUCCESSFULLY</U></b></h2>	</label>
+		   </form>
+ </div>
+ 
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+	body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+	background: black;
+}
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.menu-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.menu-list a:hover {
+    color: #007bff;
+}
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+.menu-list {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 50px;
+left: 0;
+width: 100%;
+background-color: #ffffff;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.menu-list.active {
+        display: flex;
+    }
+}
+.car-details-container {
+    display: flex;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fade-in-up 1.5s forwards;
+  }
+  
+ @keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.car-image {
+flex:1;
+animation: slide-in 1s forwards;
+}
+
+.car-image img {
+    padding:10px;
+	width: 90%;
+    max-height: 400px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    opacity: 0;
+    animation: fade-in 1s forwards, slide-in 1s forwards;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes slide-in {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(4%);
+    }
+}
+.car-details {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.inquiry-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.inquiry-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>
+    <meta charset="UTF-8">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Details</title>
+</head>
+<body>
+<nav class="top-menu">
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="menu-list">
+            <li><a href="allcars.html">Back</a></li>
+            <b>   <li><a href="Feedback.html">FeedBack</a></li></b>
+        </ul>
+    </nav>
+    <div class="car-details-container">
+<div class="car-image">
+            <img src="https://crdms.images.consumerreports.org/c_lfill,w_470,q_auto,f_auto/prod/cars/cr/model-years/12434-2021-nissan-gt-r" alt="Car Image">
+        </div>
+        <div class="car-details">
+            <h1>Nissan GTR</h1>
+            <ul>
+                <li><strong>Make:</strong> Nissan 2020</li>
+                <li><strong>Model:</strong> GTR Twin Turbo</li>
+                <li><strong>Year:</strong> 2020</li>
+                <li><strong>Price:</strong> 29,08,150.00</li>
+                <li><strong>Mileage:</strong> 19,000 miles</li>
+                <li><strong>Color:</strong> Azure Blue</li>
+                <li><strong>Engine:</strong> 3.8 L V6-cylinder</li>
+            </ul><br>
+            <button class="inquiry-button">Contact Seller</button>
+<div class="modal" id="sellerModal">
+        <div class="modal-content">
+            <h2>Contact Seller</h2>
+            <p>Name: Bhargav Industries</p>
+            <p>Email: p.bhargavkumar@gmail.com</p>
+            <p>Phone: +6667734865</p>
+<p>Phone: +0866-251234</p>
+</div>
+        <div class="modal-overlay" id="modalOverlay"></div>
+    </div>
+   <script src="script.js" defer></script>
+        </body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title> Feedback</title>
+<style>
+Body{
+margin:10px;
+background-color:black;
+}
+nav {
+  background-color: #ffffff;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: RIGHT;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color:black;
+  padding: 15px 20px;
+  display: block;
+  transition: background-color 0.3s;
+  border-radius:20px;
+}
+
+.menu a:hover {
+  background-color: orange;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%		;
+  padding: 9px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 70px;
+  
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<nav>
+    <ul class="menu">
+  <b>    <li><a href="loginsuccessfully.html">Home</a></li></b>
+ <b>   <li><a href="About.html">About</a></li></b>
+    </ul>
+  </nav>
+  <br>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Feedback</h2>
+    <p>Interaction between customers :</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://media.licdn.com/dms/image/C5612AQGc_E1Du24FAg/article-cover_image-shrink_600_2000/0/1591951587260?e=2147483647&v=beta&t=MssiDTQcURAXeju-Y-h36jYp7XzWmNDT4bFTxvzsXPM" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="States">States</label>
+        <select id="States" name="States">
+            <option value="Select......">Select......</option>
+          <option value="Andhra Pradesh">Andhra Pradesh</option>
+          <option value="Uttar Pradesh">Uttar Pradesh</option>
+          <option value="Karnataka">Karnataka</option>
+		  <option value="Bihar">Bihar</option>
+		  <option value="Rajasthan">Rajasthan</option>
+		  <option value="Haryana">Haryana</option>
+		  <option value="Tamil Nadu">Tamil Nadu</option>
+		  <option value="Maharastra">Maharastra</option>
+		  <option value="Telangana">Telangana</option>
+        </select>
+        <label for="subject">Subject</label>
+		<a href="submit.html"></a>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+    
